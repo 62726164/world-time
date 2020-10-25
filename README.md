@@ -2,6 +2,8 @@
 
 wt is an example of how normal users can use custom written SUID programs (owned by root) to gain root privileges on Linux systems. When executed without arguments, wt displays some times from around the world then exits. When executed with arguments, it runs those arguments. SUID programs owned by root are dangerous. They can be used by normal users to compromise or maintain administrative control of previously compromised Linux systems.
 
+![](screenshots/0-no.args.png)
+
 ## Installation
 
 **Do not install wt on systems without the full knowledge and consent of the system's owner.**
