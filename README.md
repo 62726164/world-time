@@ -44,7 +44,7 @@ I'll stop the demonstration here, but much more could be done with a malicious o
 
 ## Preventing SUID Files
 
-Sys admins should carefully read every shell script that they did not write themselves before running it.
+Sys admins should carefully read every shell script that they did not write themselves before running them.
 
 ## Finding SUID Files
 
