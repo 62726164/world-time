@@ -24,6 +24,15 @@ root@host:~# chmod 4755 /home/user/bin/wt
 
 An experienced sys admin should never run those two commands. However, they may be accustom to running vendor installation scripts or audit scripts as root. And, they are busy, and sometimes bullied by management to 'just do what we say' so some sys admins may just run whatever shell script they are given without question. Of course, the sys admin will be blamed by management later for not carefully taking time to read the script.
 
+## Running
+
+Once installation is complete, the normal user may now fully use wt.
+
+Normally, only root may do this.
+
+![](screenshots/1-root.png)
+![](screenshots/2-test.txt.contents)
+
 ## Finding SUID Files
 
 On most Linux systems, the find command can be used to locate SUID files. Any SUID file that is not expected should be scrutinized and potentially chmoded to something safer (755) or removed from the system.
