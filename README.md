@@ -26,17 +26,21 @@ An experienced sys admin should never run those two commands. However, they may 
 
 ## Running
 
-Once installation is complete, the normal user may now fully use wt.
-
-Normally, due to basic Linux file permissions, only root may do this.
+Normally, due to basic Linux file permissions, only root may ls /root and cat files under /root.
 
 ![](screenshots/1-root.png)
 ![](screenshots/2-test.txt.contents.png)
 
-And, sure enough, our normal user cannot.
+And, normal users cannot.
 
 ![](screenshots/3-permission.denied.png)
 
+But, by using wt, normal users can do this and more.
+
+![](screenshots/5-wt.ls.cat.success.png)
+![](screenshots/6-wt.chmod.png)
+
+I'll stop the demonstration here, but much more can be done. Root files can be copied, modified, etc. 
 
 ## Finding SUID Files
 
