@@ -40,7 +40,7 @@ But, by using wt, normal users can do this and more.
 ![](screenshots/5-wt.ls.cat.success.png)
 ![](screenshots/6-wt.chmod.png)
 
-I'll stop the demonstration here, but much more can be done. Root files can be copied, modified, etc. 
+I'll stop the demonstration here, but much more could be done with a malicious or poorly written SUID program. Root files can be copied, modified, etc. 
 
 ## Finding SUID Files
 
