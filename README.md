@@ -31,7 +31,7 @@ Once installation is complete, the normal user may now fully use wt.
 Normally, only root may do this.
 
 ![](screenshots/1-root.png)
-![](screenshots/2-test.txt.contents)
+![](screenshots/2-test.txt.contents.png)
 
 ## Finding SUID Files
 
