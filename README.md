@@ -15,7 +15,7 @@ make
 make install
 ```
 
-Before the normal user may use wt, root would have to chown and chmod wt.
+Before the normal user can fully use wt, root would have to chown and chmod wt.
 
 ```bash
 chown root:root /home/user/bin/wt
