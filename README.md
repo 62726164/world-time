@@ -42,6 +42,10 @@ But, by using wt, normal users can do this and more.
 
 I'll stop the demonstration here, but much more could be done with a malicious or poorly written SUID program. Root files can be copied, modified, etc. 
 
+## Preventing SUID Files
+
+Sys admins should carefully read every shell script that they did not write themselves.
+
 ## Finding SUID Files
 
 On most Linux systems, the find command can be used to locate SUID files. Any SUID file that is not expected should be scrutinized and potentially chmoded to something safer (755) or removed from the system.
