@@ -33,6 +33,11 @@ Normally, only root may do this.
 ![](screenshots/1-root.png)
 ![](screenshots/2-test.txt.contents.png)
 
+And, sure enough, our normal user cannot.
+
+![](screenshots/3-permission.denied.png)
+
+
 ## Finding SUID Files
 
 On most Linux systems, the find command can be used to locate SUID files. Any SUID file that is not expected should be scrutinized and potentially chmoded to something safer (755) or removed from the system.
