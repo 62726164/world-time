@@ -52,6 +52,5 @@ root@host:~# find /usr -perm /4000 2> /dev/null
 
 ## Notes
 
-  * wt is intended for educational purposes only.
+  * wt is a simple toy program intended for educational purposes only.
   * Do not install wt on systems without the full knowledge and consent of the system's owner.
-  * 
