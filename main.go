@@ -7,10 +7,6 @@ import (
 	"time"
 )
 
-// As root, do this after building and installing wt:
-// chown root:root /usr/local/bin/wt
-// chmod 4755 /usr/local/bin/wt
-
 // TimeIn returns the time in UTC if the name is "" or "UTC".
 // It returns the local time if the name is "Local".
 // Otherwise, the name is taken to be a location name in
