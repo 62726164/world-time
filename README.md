@@ -4,12 +4,23 @@ wt is an example of how normal users can use custom written SUID programs (owned
 
 ## Installation
 
-Normal users may install wt themselves. /home/user/bin is normally a good spot and is the default in the Makefile, but anywhere will do.
+**Do not install wt on systems without the full knowledge and consent of the system's owner.**
+
+Normal users may install wt themselves. /home/user/bin is a good spot and is the default in the Makefile, but anywhere will do.
 
 ```bash
 make
 make install
 ```
+
+Before the normal user may use wt, root would have to chown and chmod the file.
+
+```bash
+chown root:root /home/user/bin/wt
+chmod 4755 /home/user/bin/wt
+```
+
+An experienced sys admin should never run those two commands. However, they may be accustom to running vendor installation scripts or audit scripts as root. And, they are busy, and sometimes bullied by management to 'just do what we say' so some sys admins may just run whatever shell script they are given without question. Of course, the sys admin will be blamed by management later for not carefully taking time to read the script.
 
 ## Finding SUID Files
 
@@ -22,5 +33,5 @@ find /usr -perm /4000 2> /dev/null
 ## Notes
 
   * wt is intended for educational purposes only.
-  * Do not use wt on systems without the full knowledge and consent of the system's owner.
+  * Do not install wt on systems without the full knowledge and consent of the system's owner.
   * 
