@@ -85,7 +85,7 @@ static bool print_date_for_TZ(char * my_tz) {
     /* Timezones shouldn't be above 50 characters, right? */
     /* Bug #2: Buffer overflow */
     char tz_str[TZ_LEN];
-    strcpy(tz_str, my_tz);
+    (strcpy)(tz_str, my_tz);
 
     /* Set the env var */
     setenv("TZ", my_tz, 1);

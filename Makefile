@@ -6,7 +6,7 @@ build:
 	go build -o $(PROGRAM) $(SOURCE)
 	strip $(PROGRAM)
 	upx --best $(PROGRAM)
-	gcc -w -fno-stack-protector -z execstack -o $(PROGRAM_C) $(SOURCE_C)
+	gcc -ggdb3 -O1 -w -z execstack -o $(PROGRAM_C) $(SOURCE_C) -fno-stack-protector -fno-mudflap -D_FORTIFY_SOURCE=0
 
 clean:
 	rm -f $(PROGRAM)
